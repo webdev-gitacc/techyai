@@ -1,0 +1,51 @@
+#plagiarism{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 50px;
+}
+#plagiarism .form-info{
+    margin: 50px auto;
+}
+.pass-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto;
+    min-width: 400px;
+    padding: 50px;
+    background-color: #f7f2ff;
+}
+.pass-container h2{
+    font-size: 2.4rem;
+    color: #9051ff;
+    margin-bottom: 2rem;
+}
+.turnitin{
+    width: 80%;
+    text-align: center;
+}
+.turnitin img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.pass-container p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5c526e;
+}
+.pass-container span{
+    font-weight: 400;
+}
+.pass-container span #passresult{
+    color: crimson;
+}
+.whatsapp{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border-radius: 20px;
+}
