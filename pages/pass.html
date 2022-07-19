@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>TechyAI</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/plagiarism.css">
+    <script>
+        function  passvalue(){
+            let nameval = document.getElementById('name').value;
+            let emailval  = document.getElementById('email').value;
+            let paperval = document.getElementById('paper').value;
+            // let dateresult  = document.getElementById('date').value;
+            localStorage.setItem('setname',nameval);
+            localStorage.setItem('setemail',emailval);
+            localStorage.setItem('settitle',paperval);
+            return false;  
+        }
+    </script>
+</head>
+<body>
+    <marquee>
+        <h2>Please take picture before closing</h2>
+    </marquee>
+    <main>
+        <div class="pass-container">
+                <h2>Generated Pass</h2>
+                <div>
+                    <p>Name: <span id="nameresult"></span></p>
+                    <p>Email: <span id="emailresult"></span></p>
+                    <p>Paper Title:  <span id="titleresult"></span></p>
+                    <p>Pass Code: <span id="passresult"></span></p>
+                    <p>Date: <span id="dateresult"></span></p>
+                </div>
+                <a href="https://wa.me/919307425175?text=Hello%2C%20i%20need%20Plagiarism%20report%20!" class="whatsapp">Contact us</a>
+        </div>
+    </main>
+    <script>
+        document.getElementById('nameresult').innerHTML =localStorage.getItem('setname'); 
+        document.getElementById('emailresult').innerHTML =localStorage.getItem('setemail'); 
+        document.getElementById('titleresult').innerHTML =localStorage.getItem('settitle'); 
+        document.getElementById('passresult').innerHTML =localStorage.getItem('setcode');
+        document.getElementById('dateresult').innerHTML =new Date().toLocaleString('en-US', { timeZone: 'IST' });
+    </script>
+</body>
+</html>
